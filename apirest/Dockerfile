@@ -1,6 +1,7 @@
 FROM eclipse-temurin:21-jdk AS build
 
-COPY . /app
+# Cambia el contexto a la subcarpeta 'apirest'
+COPY ./apirest /app
 WORKDIR /app
 
 RUN chmod +x mvnw
